@@ -159,8 +159,8 @@
            <rect>
             <x>19</x>
             <y>19</y>
-            <width>471</width>
-            <height>141</height>
+            <width>491</width>
+            <height>181</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout">
@@ -204,6 +204,13 @@
             <widget class="QPushButton" name="Menu_2_button">
              <property name="text">
               <string>Find</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Menu_2_label_2">
+             <property name="text">
+              <string/>
              </property>
             </widget>
            </item>

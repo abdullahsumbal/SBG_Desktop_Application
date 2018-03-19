@@ -7,7 +7,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 from src.interface import Menu_2
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -58,7 +60,7 @@ class Ui_MainWindow(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.frame)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(19, 19, 471, 141))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(19, 19, 491, 181))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -76,6 +78,10 @@ class Ui_MainWindow(object):
         self.Menu_2_button = QtWidgets.QPushButton(self.verticalLayoutWidget)
         self.Menu_2_button.setObjectName("Menu_2_button")
         self.verticalLayout.addWidget(self.Menu_2_button)
+        self.Menu_2_label_2 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.Menu_2_label_2.setText("")
+        self.Menu_2_label_2.setObjectName("Menu_2_label_2")
+        self.verticalLayout.addWidget(self.Menu_2_label_2)
         self.gridLayoutWidget_3 = QtWidgets.QWidget(self.frame)
         self.gridLayoutWidget_3.setGeometry(QtCore.QRect(10, 399, 1001, 361))
         self.gridLayoutWidget_3.setObjectName("gridLayoutWidget_3")
@@ -113,6 +119,7 @@ class Ui_MainWindow(object):
 
     def Menu_2_handler(self):
         Menu_2.menu_2(self)
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

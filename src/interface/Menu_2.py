@@ -6,6 +6,9 @@ class menu_2():
 
     def __init__(self, ui):
 
+        # I have no isea what this is, but you need for the changing label
+        _translate = QtCore.QCoreApplication.translate
+
         # connect to database
         db = psycopg2.connect(dbname='cs421', user='cs421g29', host='comp421.cs.mcgill.ca', password='spinBike4!')
         cursor = db.cursor()
@@ -22,6 +25,14 @@ class menu_2():
 
         #remove previous data from table
         ui.Menu_2_tableWidget.clear()
+
+        # Error message
+        if user_email == "":
+            ui.Menu_2_label_2.setText(_translate("MainWindow", "Please type in the email"))
+        elif query_result == []:
+            ui.Menu_2_label_2.setText(_translate("MainWindow", "No Record found"))
+        else:
+            ui.Menu_2_label_2.setText(_translate("MainWindow", ""))
 
         # insert data into column
         for row_number, row_data in enumerate(query_result):
