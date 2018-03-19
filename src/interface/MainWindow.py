@@ -127,7 +127,7 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Find"))
         self.label.setText(_translate("MainWindow", "Email of Bike Manager"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Menu_1), _translate("MainWindow", "Menu_1"))
-        self.Menu_2_label.setText(_translate("MainWindow", "Email of Bike Manager"))
+        self.Menu_2_label.setText(_translate("MainWindow", "Email of spin bike user"))
         self.Menu_2_button.setText(_translate("MainWindow", "Find"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Menu_2), _translate("MainWindow", "Menu_2"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Menu_3), _translate("MainWindow", "Menu_3"))
