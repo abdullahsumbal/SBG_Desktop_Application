@@ -2,7 +2,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets, Qt
 import psycopg2
 
 
-class menu_2():
+class menu_4():
 
     def __init__(self, ui):
 
