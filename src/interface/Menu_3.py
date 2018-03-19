@@ -22,7 +22,10 @@ class menu_3():
 
         # fetch all the data
         query_result = cursor.fetchall()
-        print(query_result)
+
+        # remove all items from the combobox before adding
+        ui.Menu_3_comboBox.clear()
+        # Add item in combobox
         for model in query_result:
             ui.Menu_3_comboBox.addItem(model[0])
 

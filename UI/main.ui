@@ -27,7 +27,7 @@
      <item row="1" column="0">
       <widget class="QTabWidget" name="tabWidget">
        <property name="currentIndex">
-        <number>3</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="Menu_1">
         <attribute name="title">
@@ -443,7 +443,7 @@
         <attribute name="title">
          <string>Menu_4</string>
         </attribute>
-        <widget class="QTableWidget" name="Menu_3_tableWidget_2">
+        <widget class="QTableWidget" name="Menu_4_tableWidget">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -493,8 +493,8 @@
          <property name="geometry">
           <rect>
            <x>30</x>
-           <y>80</y>
-           <width>291</width>
+           <y>130</y>
+           <width>471</width>
            <height>81</height>
           </rect>
          </property>
@@ -507,7 +507,7 @@
            </widget>
           </item>
           <item row="2" column="0">
-           <widget class="QComboBox" name="comboBox"/>
+           <widget class="QComboBox" name="Menu_4_comboBox"/>
           </item>
          </layout>
         </widget>
@@ -515,7 +515,7 @@
          <property name="geometry">
           <rect>
            <x>30</x>
-           <y>20</y>
+           <y>50</y>
            <width>841</width>
            <height>51</height>
           </rect>
@@ -529,6 +529,157 @@
         <attribute name="title">
          <string>Menu_5</string>
         </attribute>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>50</y>
+           <width>571</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Change Password for Bike Managers</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="gridLayoutWidget_9">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>140</y>
+           <width>401</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Select Bike Manger</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="Menu_5_comboBox"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="gridLayoutWidget_10">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>260</y>
+           <width>401</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="Menu_5_lineEdit"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Type in Old Password</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="gridLayoutWidget_11">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>380</y>
+           <width>401</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="Menu_5_lineEdit_2"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>Type in New Password</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="Menu_5_status_label_12">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>130</y>
+           <width>491</width>
+           <height>321</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Menu_5_pushButton">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>500</y>
+           <width>201</width>
+           <height>37</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Change</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="Menu_5_tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>560</y>
+           <width>1031</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <property name="rowCount">
+          <number>10</number>
+         </property>
+         <property name="columnCount">
+          <number>20</number>
+         </property>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+        </widget>
        </widget>
       </widget>
      </item>

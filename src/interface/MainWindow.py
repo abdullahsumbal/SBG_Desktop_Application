@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from src.interface import Menu_2, Menu_1, Menu_3, Menu_4, Menu_5
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -156,13 +157,13 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.Menu_3, "")
         self.Menu_4 = QtWidgets.QWidget()
         self.Menu_4.setObjectName("Menu_4")
-        self.Menu_3_tableWidget_2 = QtWidgets.QTableWidget(self.Menu_4)
-        self.Menu_3_tableWidget_2.setGeometry(QtCore.QRect(30, 430, 1001, 341))
-        self.Menu_3_tableWidget_2.setRowCount(10)
-        self.Menu_3_tableWidget_2.setColumnCount(20)
-        self.Menu_3_tableWidget_2.setObjectName("Menu_3_tableWidget_2")
+        self.Menu_4_tableWidget = QtWidgets.QTableWidget(self.Menu_4)
+        self.Menu_4_tableWidget.setGeometry(QtCore.QRect(30, 430, 1001, 341))
+        self.Menu_4_tableWidget.setRowCount(10)
+        self.Menu_4_tableWidget.setColumnCount(20)
+        self.Menu_4_tableWidget.setObjectName("Menu_4_tableWidget")
         self.gridLayoutWidget_8 = QtWidgets.QWidget(self.Menu_4)
-        self.gridLayoutWidget_8.setGeometry(QtCore.QRect(30, 80, 291, 81))
+        self.gridLayoutWidget_8.setGeometry(QtCore.QRect(30, 130, 471, 81))
         self.gridLayoutWidget_8.setObjectName("gridLayoutWidget_8")
         self.gridLayout_8 = QtWidgets.QGridLayout(self.gridLayoutWidget_8)
         self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
@@ -170,15 +171,66 @@ class Ui_MainWindow(object):
         self.label_6 = QtWidgets.QLabel(self.gridLayoutWidget_8)
         self.label_6.setObjectName("label_6")
         self.gridLayout_8.addWidget(self.label_6, 1, 0, 1, 1)
-        self.comboBox = QtWidgets.QComboBox(self.gridLayoutWidget_8)
-        self.comboBox.setObjectName("comboBox")
-        self.gridLayout_8.addWidget(self.comboBox, 2, 0, 1, 1)
+        self.Menu_4_comboBox = QtWidgets.QComboBox(self.gridLayoutWidget_8)
+        self.Menu_4_comboBox.setObjectName("Menu_4_comboBox")
+        self.gridLayout_8.addWidget(self.Menu_4_comboBox, 2, 0, 1, 1)
         self.label_7 = QtWidgets.QLabel(self.Menu_4)
-        self.label_7.setGeometry(QtCore.QRect(30, 20, 841, 51))
+        self.label_7.setGeometry(QtCore.QRect(30, 50, 841, 51))
         self.label_7.setObjectName("label_7")
         self.tabWidget.addTab(self.Menu_4, "")
         self.Menu_5 = QtWidgets.QWidget()
         self.Menu_5.setObjectName("Menu_5")
+        self.label_8 = QtWidgets.QLabel(self.Menu_5)
+        self.label_8.setGeometry(QtCore.QRect(50, 50, 571, 71))
+        self.label_8.setObjectName("label_8")
+        self.gridLayoutWidget_9 = QtWidgets.QWidget(self.Menu_5)
+        self.gridLayoutWidget_9.setGeometry(QtCore.QRect(50, 140, 401, 81))
+        self.gridLayoutWidget_9.setObjectName("gridLayoutWidget_9")
+        self.gridLayout_9 = QtWidgets.QGridLayout(self.gridLayoutWidget_9)
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_9.setObjectName("gridLayout_9")
+        self.label_9 = QtWidgets.QLabel(self.gridLayoutWidget_9)
+        self.label_9.setObjectName("label_9")
+        self.gridLayout_9.addWidget(self.label_9, 0, 0, 1, 1)
+        self.Menu_5_comboBox = QtWidgets.QComboBox(self.gridLayoutWidget_9)
+        self.Menu_5_comboBox.setObjectName("Menu_5_comboBox")
+        self.gridLayout_9.addWidget(self.Menu_5_comboBox, 1, 0, 1, 1)
+        self.gridLayoutWidget_10 = QtWidgets.QWidget(self.Menu_5)
+        self.gridLayoutWidget_10.setGeometry(QtCore.QRect(50, 260, 401, 81))
+        self.gridLayoutWidget_10.setObjectName("gridLayoutWidget_10")
+        self.gridLayout_10 = QtWidgets.QGridLayout(self.gridLayoutWidget_10)
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_10.setObjectName("gridLayout_10")
+        self.Menu_5_lineEdit = QtWidgets.QLineEdit(self.gridLayoutWidget_10)
+        self.Menu_5_lineEdit.setObjectName("Menu_5_lineEdit")
+        self.gridLayout_10.addWidget(self.Menu_5_lineEdit, 1, 0, 1, 1)
+        self.label_10 = QtWidgets.QLabel(self.gridLayoutWidget_10)
+        self.label_10.setObjectName("label_10")
+        self.gridLayout_10.addWidget(self.label_10, 0, 0, 1, 1)
+        self.gridLayoutWidget_11 = QtWidgets.QWidget(self.Menu_5)
+        self.gridLayoutWidget_11.setGeometry(QtCore.QRect(50, 380, 401, 81))
+        self.gridLayoutWidget_11.setObjectName("gridLayoutWidget_11")
+        self.gridLayout_11 = QtWidgets.QGridLayout(self.gridLayoutWidget_11)
+        self.gridLayout_11.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_11.setObjectName("gridLayout_11")
+        self.Menu_5_lineEdit_2 = QtWidgets.QLineEdit(self.gridLayoutWidget_11)
+        self.Menu_5_lineEdit_2.setObjectName("Menu_5_lineEdit_2")
+        self.gridLayout_11.addWidget(self.Menu_5_lineEdit_2, 1, 0, 1, 1)
+        self.label_11 = QtWidgets.QLabel(self.gridLayoutWidget_11)
+        self.label_11.setObjectName("label_11")
+        self.gridLayout_11.addWidget(self.label_11, 0, 0, 1, 1)
+        self.Menu_5_status_label_12 = QtWidgets.QLabel(self.Menu_5)
+        self.Menu_5_status_label_12.setGeometry(QtCore.QRect(520, 130, 491, 321))
+        self.Menu_5_status_label_12.setText("")
+        self.Menu_5_status_label_12.setObjectName("Menu_5_status_label_12")
+        self.Menu_5_pushButton = QtWidgets.QPushButton(self.Menu_5)
+        self.Menu_5_pushButton.setGeometry(QtCore.QRect(50, 500, 201, 37))
+        self.Menu_5_pushButton.setObjectName("Menu_5_pushButton")
+        self.Menu_5_tableWidget = QtWidgets.QTableWidget(self.Menu_5)
+        self.Menu_5_tableWidget.setGeometry(QtCore.QRect(20, 560, 1031, 231))
+        self.Menu_5_tableWidget.setRowCount(10)
+        self.Menu_5_tableWidget.setColumnCount(20)
+        self.Menu_5_tableWidget.setObjectName("Menu_5_tableWidget")
         self.tabWidget.addTab(self.Menu_5, "")
         self.gridLayout.addWidget(self.tabWidget, 1, 0, 1, 1)
         self.gridLayoutWidget.raise_()
@@ -189,8 +241,43 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(3)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+        self.Menu_1_radioButton.setChecked(1)
+        self.Menu_1_pushButton.clicked.connect(self.Menu_1_handler)
+        self.Menu_2_button.clicked.connect(self.Menu_2_handler)
+        self.Menu_3_pushButton.clicked.connect(self.Menu_3_handler)
+        self.tabWidget.currentChanged.connect(self.onChange)  # changed!
+        self.Menu_4_comboBox.currentIndexChanged.connect(self.onSelect_Combox)
+        self.Menu_5_comboBox.currentIndexChanged.connect(self.onSelect_Combox_Menu_5)
+        self.Menu_5_pushButton.clicked.connect(self.Menu_5_handler)
+
+    def Menu_3_handler(self):
+        Menu_3.menu_3(self, 0)
+
+    def onChange(self, i):
+        if i == 2:
+            Menu_3.menu_3(self, 1)
+        if i == 3:
+            Menu_4.menu_4(self, 1)
+        if i == 4:
+            Menu_5.menu_5(self, 1)
+
+    def onSelect_Combox(self):
+        Menu_4.menu_4(self, 0)
+
+    def Menu_2_handler(self):
+        Menu_2.menu_2(self)
+
+    def Menu_1_handler(self):
+        Menu_1.menu_1(self)
+
+    def Menu_5_handler(self):
+        Menu_5.menu_5(self, 2)
+
+    def onSelect_Combox_Menu_5(self):
+        Menu_5.menu_5(self, 0)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -213,5 +300,10 @@ class Ui_MainWindow(object):
         self.label_6.setText(_translate("MainWindow", "Select cartaker/admin"))
         self.label_7.setText(_translate("MainWindow", "Show all the unresolved ticekets issued by  a caretaker/admin"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Menu_4), _translate("MainWindow", "Menu_4"))
+        self.label_8.setText(_translate("MainWindow", "Change Password for Bike Managers"))
+        self.label_9.setText(_translate("MainWindow", "Select Bike Manger"))
+        self.label_10.setText(_translate("MainWindow", "Type in Old Password"))
+        self.label_11.setText(_translate("MainWindow", "Type in New Password"))
+        self.Menu_5_pushButton.setText(_translate("MainWindow", "Change"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Menu_5), _translate("MainWindow", "Menu_5"))
 

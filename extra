@@ -1,21 +1,42 @@
         self.Menu_1_radioButton.setChecked(1)
         self.Menu_1_pushButton.clicked.connect(self.Menu_1_handler)
         self.Menu_2_button.clicked.connect(self.Menu_2_handler)
-        self.pushButton.clicked.connect(self.Menu_3_handler)
-        self.tabWidget.currentChanged.connect(self.onChange) #changed!
+        self.Menu_3_pushButton.clicked.connect(self.Menu_3_handler)
+        self.tabWidget.currentChanged.connect(self.onChange)  # changed!
+        self.Menu_4_comboBox.currentIndexChanged.connect(self.onSelect_Combox)
+        self.Menu_5_comboBox.currentIndexChanged.connect(self.onSelect_Combox_Menu_5)
+        self.Menu_5_pushButton.clicked.connect(self.Menu_5_handler)
 
-   def Menu_3_handler(self):
+
+    def Menu_3_handler(self):
         Menu_3.menu_3(self, 0)
+
 
     def onChange(self, i):
         if i == 2:
             Menu_3.menu_3(self, 1)
+        if i == 3:
+            Menu_4.menu_4(self, 1)
+        if i == 4:
+            Menu_5.menu_5(self, 1)
+
+
+    def onSelect_Combox(self):
+        Menu_4.menu_4(self, 0)
+
 
     def Menu_2_handler(self):
         print("heleo")
         Menu_2.menu_2(self)
 
+
     def Menu_1_handler(self):
         Menu_1.menu_1(self)
 
+    def Menu_5_handler(self):
+        Menu_5.menu_5(self, 2)
 
+    def onSelect_Combox_Menu_5(self):
+        Menu_5.menu_5(self, 0)
+
+        from src.interface import Menu_2, Menu_1, Menu_3, Menu_4, Menu_5
