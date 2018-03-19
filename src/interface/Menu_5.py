@@ -114,6 +114,22 @@ class menu_5():
         # alter/update query
         cursor = db.cursor()
         try:
+
+            # get the cuurent password of the selected bikemanager
+            cursor.execute("""SELECT bmpassword FROM  bikemanagers  WHERE bmemail=%(bmemail)s ;""",
+                               {'bmemail': bmemail})
+            # fetch all the data
+            current_password = cursor.fetchall()[0][0]
+            print(current_password)
+
+            # validate old password
+            if current_password != old_password:
+                raise Exception('Old Password does not match')
+
+            #validate new password
+            if len(new_password) == 0:
+                raise Exception('The new password is empty. Type something')
+
             cursor.execute(""" UPDATE bikemanagers SET bmpassword = %(new_password)s WHERE bmemail = %(bmemail)s;;
                  """, {'new_password': new_password, 'bmemail': bmemail,})
             ui.Menu_5_status_label_12.setText(_translate("MainWindow", "Updated Successfully"))
@@ -128,8 +144,8 @@ class menu_5():
 
 
             if ui.Menu_5_comboBox.currentIndex():
-                cursor.execute("""SELECT * FROM  bikemanagers  WHERE bmemail=%(bm_email)s ;""",
-                               {'bm_email': bmemail})
+                cursor.execute("""SELECT * FROM  bikemanagers  WHERE bmemail=%(bmemail)s ;""",
+                               {'bmemail': bmemail})
             # fetch all the data
             query_result = cursor.fetchall()
 

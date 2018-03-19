@@ -11,10 +11,6 @@ class AppWindow(QDialog):
     def __init__(self):
         super().__init__()
 
-        # connecting to database
-        db = psycopg2.connect(dbname='cs421', user='cs421g29', host='comp421.cs.mcgill.ca', password='spinBike4!')
-        cursor = db.cursor()
-
         # convert ui file to python file
         #os.system('pyuic5 ./../UI/main.ui -o interface/MainWindow.py')
 
