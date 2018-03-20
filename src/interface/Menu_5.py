@@ -1,5 +1,4 @@
-from ls\
-    import QtCore, QtGui, QtWidgets, Qt
+from PyQt5 import QtCore, QtGui, QtWidgets, Qt
 import psycopg2
 
 
