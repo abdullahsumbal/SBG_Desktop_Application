@@ -17,14 +17,14 @@ Option 6: Quit.
 
 We will be demoing the application on Monday 26 March.
 
-Download the Application
+## Download the Application
 git clone https://github.com/abdullahsumbal/SBG_Desktop_Application.git
 
 
-Run the Application
+## Run the Application
 pyhton3 src/app.py
 
-Dependenices
+## Dependenices
 Psycopg2
 Pyhton3
 Pyinstaller
